@@ -9,4 +9,4 @@ export class ExternalObject<T> {
     [K: symbol]: T
   }
 }
-export function createVal(): ExternalObject<any>
+export function createPlugin(): ExternalObject<any>

@@ -1,9 +1,9 @@
 const { folder } = require('@node/core')
-const { createVal: createVal1 } = require('@node/plugin-1')
-const { createVal: createVal2 } = require('@node/plugin-2')
+const { createPlugin: createPlugin1 } = require('@node/plugin-1')
+const { createPlugin: createPlugin2 } = require('@node/plugin-2')
 
-const val1 = createVal1()
-const val2 = createVal2()
+const val1 = createPlugin1()
+const val2 = createPlugin2()
 
 console.log(val1, val2)
 

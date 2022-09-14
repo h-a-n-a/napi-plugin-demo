@@ -225,6 +225,6 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { createVal } = nativeBinding
+const { createPlugin } = nativeBinding
 
-module.exports.createVal = createVal
+module.exports.createPlugin = createPlugin
