@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name = "speedy_sourcemap_node"
+name = "plugin_2"
 publish = false
 version = "0.1.0"
 

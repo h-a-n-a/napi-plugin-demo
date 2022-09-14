@@ -1,7 +1,7 @@
 const init = () => Promise.resolve()
 module.exports = init
 
-const { folder } = require('./binding')
+const { createVal } = require('./binding')
 
 // you can modify binding here
-module.exports.folder = folder
+module.exports.createVal = createVal

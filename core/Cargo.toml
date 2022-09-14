@@ -2,7 +2,7 @@
 description = "speedy sourcemap"
 edition = "2021"
 license = "MIT"
-name = "speedy_sourcemap"
+name = "core_lib"
 repository = "https://github.com/speedy-js/sourcemap"
 version = "0.0.1"
 

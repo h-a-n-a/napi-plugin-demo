@@ -37,7 +37,7 @@
     "bench": "node -r @swc-node/register benchmark/bench.ts",
     "artifacts": "napi artifacts",
     "prepublishOnly": "napi prepublish -t npm && esbuild --minify --outfile=node/binding.js --allow-overwrite node/binding.js",
-    "build:node": "pnpm build --dir node",
+    "build:node": "pnpm --filter @node/* run build",
     "build:wasm": "pnpm build --dir wasm",
     "build": "pnpm build:node && pnpm build:wasm",
     "format": "prettier . -w",

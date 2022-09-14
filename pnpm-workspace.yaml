@@ -1,1 +1,1 @@
-packages: ['node', 'benchmark', 'wasm']
+packages: ['node', 'plugin-1', 'plugin-2', 'example', 'benchmark', 'wasm']

@@ -1,0 +1,8 @@
+{
+  "name": "plugin-example",
+  "dependencies": {
+    "@node/core": "workspace:*",
+    "@node/plugin-1": "workspace:*",
+    "@node/plugin-2": "workspace:*"
+  }
+}

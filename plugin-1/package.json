@@ -1,5 +1,5 @@
 {
-  "name": "@node/core",
+  "name": "@node/plugin-1",
   "version": "0.0.0",
   "private": true,
   "description": "Speedy source-map",
@@ -7,8 +7,11 @@
     "build": "napi build --platform --release --js binding.js --dts binding.d.ts --pipe \"prettier -w\"",
     "build:debug": "napi build --platform --js binding.js --dts binding.d.ts --pipe \"prettier -w\""
   },
+  "dependencies": {
+    "@node/core": "workspace:*"
+  },
   "napi": {
-    "name": "core",
+    "name": "plugin-1",
     "triples": {
       "defaults": true,
       "additional": [

@@ -9,4 +9,4 @@ export class ExternalObject<T> {
     [K: symbol]: T
   }
 }
-export function folder(values: ExternalObject<any>[]): number
+export function createVal(): ExternalObject<any>

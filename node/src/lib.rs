@@ -1,13 +1,12 @@
 use napi::bindgen_prelude::*;
 use napi_derive::napi;
 
-use speedy_sourcemap::add as speedy_add;
+use core_lib::Val;
 
-pub fn create_external<T>(value: T) -> External<T> {
-  External::new(value)
-}
-
-#[napi]
-fn add(a: u32, b: u32) -> u32 {
-  speedy_add(a, b)
+#[napi(ts_args_type = "values: ExternalObject<any>[]")]
+pub fn folder(values: Vec<External<Val>>) -> u32 {
+  values.iter().fold(0, |mut prev, val| {
+    prev += val.0;
+    prev
+  })
 }
